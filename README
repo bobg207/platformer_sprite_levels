@@ -5,7 +5,8 @@ In "Sprites"
     1.  ALL game objects are sprites (walls, player, exit, enemies, etc)
     2.  In Layout class:
         a. __init__ creates all of the groups for the sprite objects, and the level attribute
-        b. "create_layout()" gets the list for the specific level (minus 1 to convert to correct index), empties all sprite groups, and loads the level
+        b. "create_layout()" gets the list for the specific level (minus 1 to convert to correct index), 
+             empties all sprite groups, and loads the level
         c. "update()" call "exit_collide()", to check for collision with exit, and update all groups
         d. "exit_collide()"
             i. get player from player_grp
