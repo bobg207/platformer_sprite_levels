@@ -18,6 +18,7 @@ class Block(pygame.sprite.Sprite):
         self.rect = self.surf.get_rect()
         self.rect.x = x
         self.rect.y = y
+        self.image = pygame.draw.rect(self.surf, BLACK, self.rect)
 
 
 class Player(pygame.sprite.Sprite):
@@ -32,6 +33,7 @@ class Player(pygame.sprite.Sprite):
         self.y_velo = 0
         self.collide_rt = False
         self.collide_lt = False
+        self.image = pygame.draw.rect(self.surf, RED, self.rect)
 
         self.jumping = False
         self.falling = False
